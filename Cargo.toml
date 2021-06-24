@@ -10,7 +10,7 @@ readme = "README.md"
 
 [dependencies]
 anyhow = "1.0.26"
-bellperson = { version = "0.14.0", default-features = false }
+bellperson = { version = "0.14.2", default-features = false }
 bincode = "1.1.2"
 serde = "1.0.104"
 filecoin-proofs-v1 = { package = "filecoin-proofs", version = "~8.0", default-features = false, path = "../rust-fil-proofs/filecoin-proofs" }
@@ -23,3 +23,6 @@ default = ["pairing", "gpu"]
 pairing = ["filecoin-proofs-v1/pairing", "bellperson/pairing", "storage-proofs-core/pairing", "fr32/pairing"]
 blst = ["filecoin-proofs-v1/blst", "bellperson/blst", "storage-proofs-core/blst", "fr32/blst"]
 gpu = ["filecoin-proofs-v1/gpu", "filecoin-hashers/gpu", "storage-proofs-core/gpu", "bellperson/gpu", "fr32/gpu"]
+
+[patch.crates-io]
+bellperson = { git = "https://github.com/15012700225/my-bellman", branch = "version-0.14.2" }
