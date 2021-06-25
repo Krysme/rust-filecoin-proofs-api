@@ -26,3 +26,4 @@ gpu = ["filecoin-proofs-v1/gpu", "filecoin-hashers/gpu", "storage-proofs-core/gp
 
 [patch.crates-io]
 bellperson = { git = "https://github.com/15012700225/my-bellman", branch = "version-0.14.2" }
+merkletree = { git = "https://github.com/Krysme/merkletree" }
