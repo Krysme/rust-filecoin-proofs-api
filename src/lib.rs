@@ -27,3 +27,8 @@ pub use storage_proofs_core::{
     sector::{OrderedSectorSet, SectorId},
     util::NODE_SIZE,
 };
+
+pub const GIT_VERSION: &str = git_version::git_version!(
+    args = ["--abbrev=40", "--always", "--dirty=-modified"],
+    prefix = "git:"
+);
