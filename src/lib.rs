@@ -32,3 +32,4 @@ pub const GIT_VERSION: &str = git_version::git_version!(
     args = ["--abbrev=40", "--always", "--dirty=-modified"],
     prefix = "git:"
 );
+pub const RUST_FIL_PROOFS_GIT_VERSION: &str = filecoin_proofs_v1::GIT_VERSION;
